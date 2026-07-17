@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editkaro.in — Premium Video Editing Agency</title>
+  <meta name="description" content="Editkaro.in is a social media marketing & video editing agency. We transform ideas into viral videos with cinematic quality." />
+  <meta property="og:title" content="Editkaro.in — Premium Video Editing Agency" />
+  <meta property="og:description" content="We create viral videos, ads, and cinematic content for brands." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader" role="status" aria-label="Loading">
+    <div class="logo">Editkaro</div>
+    <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+    <div class="percent" id="percentText">0%</div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo" id="logoEasterEgg">Editkaro</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video class="hero-video-bg" autoplay muted loop playsinline aria-hidden="true">
+      <source src="https://cdn.pixabay.com/video/2022/03/14/110466-687331015_large.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1 id="heroTitle">We Transform Ideas Into Viral Videos.</h1>
+      <p class="subtitle">Cinematic editing, social media marketing & creative storytelling — for brands that demand excellence.</p>
+      <div class="cta-group">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-outline">Start Your Project</a>
+      </div>
+      <div class="scroll-indicator"><span></span></div>
+    </div>
+    <div class="floating-shape shape1"></div>
+    <div class="floating-shape shape2"></div>
+    <div class="floating-shape shape3"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Editkaro</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>We are a social media marketing & video editing agency with a passion for storytelling. From short-form reels to cinematic documentaries, we craft content that captivates.</p>
+          <p><strong>Mission:</strong> Empower brands with viral-worthy content. <br><strong>Vision:</strong> Redefine digital storytelling.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item"><span class="stat-number" data-count="1200">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="500">0</span><span class="stat-label">Happy Clients</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="10">0</span><span class="stat-label">M+ Views</span></div>
+          <div class="stat-item"><span class="stat-number" data-count="98">0</span><span class="stat-label">% Satisfaction</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Featured Portfolio</h2>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="short">Short-form</button>
+        <button class="filter-btn" data-filter="long">Long-form</button>
+        <button class="filter-btn" data-filter="gaming">Gaming</button>
+        <button class="filter-btn" data-filter="football">Football</button>
+        <button class="filter-btn" data-filter="anime">Anime</button>
+        <button class="filter-btn" data-filter="doc">Documentary</button>
+        <button class="filter-btn" data-filter="ads">Ads</button>
+        <button class="filter-btn" data-filter="color">Color Grading</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section-title">Why Choose Editkaro</h2>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section-title">Our Process</h2>
+      <div class="process-timeline" id="processTimeline"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Client Testimonials</h2>
+      <div class="testimonial-slider" id="testimonialSlider"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Create</h2>
+      <div class="contact-wrap">
+        <form id="contactForm" class="contact-form">
+          <input type="text" placeholder="Full Name" required aria-label="Full Name" />
+          <input type="email" placeholder="Email Address" required aria-label="Email" />
+          <input type="text" placeholder="Phone Number" aria-label="Phone" />
+          <select required aria-label="Project Type">
+            <option value="">Project Type</option>
+            <option>Short-form Video</option><option>Long-form Video</option>
+            <option>Gaming Edit</option><option>Commercial Ad</option>
+          </select>
+          <input type="text" placeholder="Budget (USD)" aria-label="Budget" />
+          <input type="date" aria-label="Deadline" />
+          <textarea rows="4" placeholder="Tell us about your project..." required aria-label="Message"></textarea>
+          <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+          <p><i class="fas fa-envelope"></i> hello@editkaro.in</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="nav-logo">Editkaro</span><p>Social media & video editing agency.</p></div>
+        <div><h4>Services</h4><ul><li>Editing</li><li>Marketing</li><li>Color Grading</li></ul></div>
+        <div><h4>Company</h4><ul><li>About</li><li>Careers</li><li>Blog</li></ul></div>
+        <div><h4>Connect</h4><div class="social-icons"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Editkaro.in — All rights reserved.</p><button id="backToTop" class="back-top"><i class="fas fa-arrow-up"></i></button></div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CONTACT BUTTONS -->
+  <a href="#" class="float-whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="mailto:hello@editkaro.in" class="float-email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <div class="modal-body" id="modalBody">
+        <video controls id="modalVideo" src=""></video>
+        <div class="modal-info" id="modalInfo"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE CONSENT -->
+  <div class="cookie-consent" id="cookieConsent">
+    <p>We use cookies to enhance your experience. <a href="#">Learn more</a></p>
+    <button id="cookieAccept">Accept</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
